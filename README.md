@@ -34,3 +34,7 @@ chmod +x FiveM-server-install-Linux-x86.sh
 - 到 [Cfx.re Keymaster](https://keymaster.fivem.net/) 申请 License Key
 - 服务器公网 IP 需放行端口 30120（TCP+UDP）
 - GTA V 经典版（Legacy）游戏文件（增强版暂不支持）
+
+## 参考
+
+- [Cfx.re Forum: Deploying a FiveM server in Ubuntu on aarch64/ARM64 machine](https://forum.cfx.re/t/deploying-a-fivem-server-in-ubuntu-on-aarch64-arm64-machine/5185384)

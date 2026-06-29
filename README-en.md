@@ -34,3 +34,7 @@ chmod +x FiveM-server-install-Linux-x86.sh
 - A [Cfx.re License Key](https://keymaster.fivem.net/)
 - Public IP with ports 30120 (TCP+UDP) accessible
 - GTA V Legacy game files (Enhanced Edition not supported)
+
+## Reference
+
+- [Cfx.re Forum: Deploying a FiveM server in Ubuntu on aarch64/ARM64 machine](https://forum.cfx.re/t/deploying-a-fivem-server-in-ubuntu-on-aarch64-arm64-machine/5185384)
