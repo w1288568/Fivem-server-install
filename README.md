@@ -1,34 +1,36 @@
-# FiveM Server Install
+> 中文 | [English](README-en.md)
 
-Three scripts to deploy a FiveM server on different platforms:
+# FiveM 服务端一键部署脚本
 
-| File | Platform | Architecture | Notes |
-|------|----------|-------------|-------|
-| `FiveM-server-install-Linux-ARM.sh` | Ubuntu 20.04/22.04/24.04 | aarch64 | Via FEX-Emu (x86 emulation) |
-| `FiveM-server-install-Linux-x86.sh` | Ubuntu / Debian / CentOS / Rocky / Alma / Fedora / Arch | x86_64 | Native Linux |
-| `FiveM-server-install-Windows.ps1` | Windows Server 2016+ / Win10+ | AMD64 | PowerShell 5.1+ |
+三个脚本覆盖主流平台，快速部署 FiveM 服务端：
 
-## Features
+| 文件 | 平台 | 架构 | 备注 |
+|------|------|------|------|
+| `FiveM-server-install-Linux-ARM.sh` | Ubuntu 20.04/22.04/24.04 | aarch64 | 通过 FEX-Emu 模拟 x86 |
+| `FiveM-server-install-Linux-x86.sh` | Ubuntu / Debian / CentOS / Rocky / Alma / Fedora / Arch | x86_64 | 原生运行 |
+| `FiveM-server-install-Windows.ps1` | Windows Server 2016+ / Win10+ | AMD64 | 需 PowerShell 5.1+ |
 
-- **10-option interactive menu**: install, start, status/logs, edit config, firewall check, update core, uninstall, txAdmin setup
-- **txAdmin support**: MariaDB/MySQL database installation, port 40120, web panel access
-- **Update with rollback**: core update backs up old version, restores on failure
-- **Firewall management**: detect and add missing rules for ports 30120 (game) and 40120 (txAdmin)
-- **Cross-distro support** (Linux x86): auto-detects package manager and firewall tool
+## 功能
 
-## Usage
+- **10 项交互菜单**：安装、启动、状态/日志、编辑配置、防火墙、更新核心、卸载、txAdmin 配置
+- **txAdmin 支持**：可选 MariaDB/MySQL 数据库安装、端口 40120 放行、面板访问
+- **更新回滚**：更新核心时自动备份，失败恢复
+- **防火墙管理**：检测并一键添加缺失的端口规则（30120 游戏端口 + 40120 管理端口）
+- **多发行版兼容**（Linux x86）：自动识别包管理器和防火墙工具
+
+## 使用
 
 ```bash
 # Linux
 chmod +x FiveM-server-install-Linux-x86.sh
 ./FiveM-server-install-Linux-x86.sh
 
-# Windows (run as Administrator)
+# Windows（以管理员身份运行）
 .\FiveM-server-install-Windows.ps1
 ```
 
-## Requirements
+## 前置条件
 
-- A [Cfx.re License Key](https://keymaster.fivem.net/)
-- Public IP with ports 30120 (TCP+UDP) accessible
-- GTA V Legacy game files (Enhanced Edition not supported)
+- 到 [Cfx.re Keymaster](https://keymaster.fivem.net/) 申请 License Key
+- 服务器公网 IP 需放行端口 30120（TCP+UDP）
+- GTA V 经典版（Legacy）游戏文件（增强版暂不支持）
