@@ -10,6 +10,8 @@
 | `FiveM-server-install-Linux-x86.sh` | Ubuntu / Debian / CentOS / Rocky / Alma / Fedora / Arch | x86_64 | 原生运行 |
 | `FiveM-server-install-Windows.ps1` | Windows Server 2016+ / Win10+ | AMD64 | 需 PowerShell 5.1+ |
 
+![FiveM Server Install](img/fivem-install.png)
+
 ## 功能
 
 - **10 项交互菜单**：安装、启动、状态/日志、编辑配置、防火墙、更新核心、卸载、txAdmin 配置

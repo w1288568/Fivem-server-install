@@ -10,6 +10,8 @@ Three scripts to deploy a FiveM server on different platforms:
 | `FiveM-server-install-Linux-x86.sh` | Ubuntu / Debian / CentOS / Rocky / Alma / Fedora / Arch | x86_64 | Native Linux |
 | `FiveM-server-install-Windows.ps1` | Windows Server 2016+ / Win10+ | AMD64 | PowerShell 5.1+ |
 
+![FiveM Server Install](img/fivem-install.png)
+
 ## Features
 
 - **10-option interactive menu**: install, start, status/logs, edit config, firewall check, update core, uninstall, txAdmin setup
